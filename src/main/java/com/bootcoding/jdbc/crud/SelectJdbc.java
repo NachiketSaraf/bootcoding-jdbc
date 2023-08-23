@@ -1,13 +1,11 @@
-package com.bootcoding.jdbc;
-
-import org.postgresql.Driver;
+package com.bootcoding.jdbc.crud;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class UserJdbcExample {
+public class SelectJdbc {
     public static void main(String[] args) {
         try{
             //1. load jdbc driver
