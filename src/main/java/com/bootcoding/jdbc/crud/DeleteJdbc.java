@@ -1,11 +1,10 @@
-package com.bootcoding.jdbc;
+package com.bootcoding.jdbc.crud;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class InsertJdbcExample {
+public class DeleteJdbc {
     public static void main(String[] args) {
         try{
             //1. load jdbc driver
@@ -18,11 +17,8 @@ public class InsertJdbcExample {
             /// 3. Query database using Statement Object
             Statement stmt = connection.createStatement();
 
-            stmt.executeUpdate("insert into customer ")
+            stmt.executeUpdate("delete from customer where customer_id between 500 and 1000");
 
-            //4. Execute query
-            ResultSet rs = stmt.executeQuery("select * from customer");
-            System.out.println(rs);
 
             // 5. close connection
             connection.close();
