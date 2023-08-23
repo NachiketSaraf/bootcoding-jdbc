@@ -99,7 +99,7 @@ public class QueryOnCustomerUsingMethods {
 
             Statement stmt = conn.createStatement();
 
-            String sql = ("Select count(*) from customer where city = '"+cityName +"'");
+            String sql = ("Select count(*) from customer where city = '"+  cityName +"'");
 
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()){
