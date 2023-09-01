@@ -17,6 +17,7 @@ public class DeleteJdbc {
             /// 3. Query database using Statement Object
             Statement stmt = connection.createStatement();
 
+            //4
             stmt.executeUpdate("delete from customer where customer_id between 500 and 1000");
 
 
